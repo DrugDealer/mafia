@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap 101 Template</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Arena" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/content.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
+
+	<body style="" data-twttr-rendered="true">
+		<!-- Docs master nav -->
+		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="../" class="navbar-brand">Bootstrap</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="../getting-started">Getting started</a>
+						</li>
+						<li>
+							<a href="../css">CSS</a>
+						</li>
+						<li>
+							<a href="../components">Components</a>
+						</li>
+						<li>
+							<a href="../javascript">JavaScript</a>
+						</li>
+						<li>
+							<a href="../customize">Customize</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="../about">About</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Docs page layout -->
+		<div class="mt-header" id="content">
+			<div class="container">
+				<h1>Getting started</h1>
+				<p>
+					An overview of Bootstrap, how to download and use, basic templates and examples, and more.
+				</p>
+			</div>
+		</div>
+
+		<!-- Callout for the old docs link -->
+		<div class="bs-old-docs">
+			<div class="container">
+				<strong> Mafia talk! </strong>
+			</div>
+		</div>
+
+		<div class="container bs-docs-container">
+			<div class="row">
+
+				<div class="col-md-9" role="main">
+					<!-- Getting started
+					================================================== -->
+					<div class="bs-docs-section">
+						<div class="page-header">
+							<h1 id="download">Download Bootstrap</h1>
+						</div>
+						<p class="lead">
+							Bootstrap has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.
+						</p>
+
+						<h3 id="download-compiled">Compiled CSS, JS, and fonts</h3>
+						<p>
+							The fastest way to get Bootstrap is to download the precompiled and minified versions of our CSS, JavaScript, and fonts. No documentation or original source code files are included.
+						</p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="https://github.com/twbs/bootstrap/releases/download/v3.0.3/bootstrap-3.0.3-dist.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);" role="button">Download precompiled Bootstrap</a>
+						</p>
+
+						<h3 id="download-additional">Additional downloads</h3>
+						<div class="bs-docs-dl-options">
+							<h4><a href="https://github.com/twbs/bootstrap/archive/v3.0.3.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download source code</a></h4>
+							<p>
+								Get the latest Bootstrap LESS and JavaScript source code by downloading it directly from GitHub.
+							</p>
+							<h4><a href="https://github.com/twbs/bootstrap" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'GitHub project']);">Clone or fork via GitHub</a></h4>
+							<p>
+								Visit us on GitHub to clone or fork the Bootstrap project.
+							</p>
+							<h4> Install with <a href="http://bower.io">Bower</a></h4>
+							<p>
+								Install and manage Bootstrap's styles, JavaScript, and documentation using <a href="http://bower.io">Bower</a>.
+							</p>
+							<div class="highlight">
+								<pre><code class="bash"><span class="nv">$ </span>bower install bootstrap
+</code></pre>
+</div>						</div>
+
+						<div class="bs-callout bs-callout-warning" id="callout-less-compilation">
+							<h4>Compiling Bootstrap's LESS files</h4>
+							<p>
+								If you work with Bootstrap's uncompiled source code, you need to compile the LESS files to produce usable CSS files. For compiling LESS files into CSS, we only officially support <a href="http://twitter.github.io/recess/">Recess</a>, which is Twitter's CSS hinter based on <a href="http://lesscss.org">less.js</a>.
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-3">
+					<div class="mf-sidebar hidden-print affix" role="complementary">
+						<ul class="nav bs-sidenav">
+							<li class="active">
+								<a href="#download">시작하기</a>
+								<ul class="nav" hidden>
+									<li class="">
+										<a href="#download-compiled">Compiled CSS, JS, and fonts</a>
+									</li>
+									<li class="">
+										<a href="#download-additional">Additional downloads</a>
+									</li>
+									<li class="">
+										<a href="#download-cdn">Bootstrap CDN</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="#whats-included">초대하기</a>
+								<ul class="nav" hidden>
+									<li class="">
+										<a href="#whats-included-precompiled">Precompiled</a>
+									</li>
+									<li class="">
+										<a href="#whats-included-source">Source code</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<footer class="mt-footer" role="contentinfo">
+				<div class="container">
+					<p>
+						Designed and built with all the fuck in the world by DrugDealer.
+					</p>
+				</div>
+			</footer>
+
+		</div>
+</html>
